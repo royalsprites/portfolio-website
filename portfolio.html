@@ -44,7 +44,7 @@
             I’m a Bachelor of Science in Computer Science student at the University of the Philippines Cebu, passionate about Software Development and Cybersecurity. 
             From a young age, I’ve always been curious about how things work—especially the inner workings of applications and the technologies that power them. 
             That curiosity eventually evolved into a strong passion for building efficient systems and ensuring they’re secure.
-
+            <br/><br/>
             As I dive deeper into the world of tech, I find myself constantly fascinated by the blend of creativity and logic required in software development, as well as the critical thinking and attention to detail involved in cybersecurity. 
             I genuinely enjoy solving complex problems, learning new tools and frameworks, and staying up to date with the latest innovations in technology.
             
@@ -118,7 +118,7 @@
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
-    <h2>Connect with Us</h2>
+    <h2>Connect with Me</h2>
     <p class="quote">"Feel free to reach out—every idea starts with a conversation!"</p>
     <div class="contact-details">
         <p><strong>Email:</strong> <u>aaasenoron@gmail.com</u></p>
@@ -132,12 +132,12 @@
     </div>
     <div class="social-media">
         <ul>
-            <li><a href="https://www.facebook.com/aagrsen" target="_blank">Facebook</a></li>
-            <li><a href="https://www.linkedin.com/in/aasenoron" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/heizoketchup" target="_blank"><img src="images/instagram.png"/></a></li>
+            <li><a href="https://github.com/royalsprites" target="_blank"><img src="images/github-icon.png"/></a></li>
         </ul>
     </div>
 </section>
-  <script>
+  <script defer>
     const sections = document.querySelectorAll("section");
     const navBtns = document.querySelectorAll(".nav-btn");
   
@@ -148,7 +148,7 @@
         section.scrollIntoView({ behavior: "smooth" });
       });
     });
-  
+
     window.addEventListener("scroll", () => {
       let current = "";
       sections.forEach(section => {
@@ -157,7 +157,7 @@
           current = section.getAttribute("id");
         }
       });
-  
+
       navBtns.forEach(btn => {
         btn.classList.remove("active");
         if (btn.getAttribute("data-target") === current) {
@@ -171,6 +171,22 @@
         themeToggle.addEventListener("change", () => {
             document.body.classList.toggle("dark-theme");
         });
+    });
+    
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById('about').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+          });
+        });
+      });
     });
   </script>  
 </body>

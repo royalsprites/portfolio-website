@@ -359,6 +359,7 @@
   }
   
   .contact h2 {
+    color: #cd9443;
     font-size: 2rem;
     margin-bottom: 1rem;
   }
@@ -366,7 +367,6 @@
   .quote {
     font-style: italic;
     margin-bottom: 2rem;
-    color: #cd9443;
   }
   
   .contact-details {
@@ -398,16 +398,12 @@
     gap: 1rem;
   }
   
-  .social-media a {
+  .social-media a img {
+    width: 30px;
+    height: 30px;
     margin: 0 1rem;
-    text-decoration: none;
-    color: #007acc;
     font-size: 1.2rem;
     transition: color 0.3s ease;
-  }
-  
-  .social-media a:hover {
-    color: #005fa3;
   }
   
   /* Animations */
