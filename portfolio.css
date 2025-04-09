@@ -372,6 +372,34 @@ input:checked + .slider::before {
   margin-bottom: 1rem;
 }
 
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto 2rem auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.contact-form button {
+  padding: 0.8rem 1rem;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #005fa3;
+}
+
 .quote {
   font-style: italic;
   margin-bottom: 2rem;
